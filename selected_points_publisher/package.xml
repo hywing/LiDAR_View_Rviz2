@@ -1,0 +1,21 @@
+<?xml version="0.1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>selected_points_publisher</name>
+  <version>0.1.0</version>
+  <description>RViz plugin to select points and publish them in a new topic.</description>
+  <maintainer  email="ethan.xiang@pixel-trans.com">ptdev</maintainer>
+  <license>TODO: License declaration</license>
+  <buildtool_depend>ament_cmake_ros</buildtool_depend>
+
+  <depend>pluginlib</depend>
+  <depend>rviz_common</depend>
+  <depend>geometry_msgs</depend>
+  <depend>rclcpp</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  <export>
+      <build_type>ament_cmake</build_type>
+  </export>
+</package>

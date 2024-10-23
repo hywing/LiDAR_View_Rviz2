@@ -1,0 +1,12 @@
+###### for vehicle running ######
+lidar_view_sensor_proc_node:
+  ros__parameters:
+    file_path: "/home/asensing/rosbag2_2023_11_09-23_16_22"
+    file_name: "rosbag2_2023_11_09-23_16_22_0.db3"
+    topics: ["/aglidar_points", "/lidar2"]
+    frame_ids: ["base_link", "base_link"]
+
+    ## tf ----> [x y z q.x q.y q.z q.w] 
+    ## default ----> [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+    /aglidar_points/extrinsic: [1.79, -0.0, 1.725, 0.0, 0.0, 0.0, 1.0]   
+    /lidar2/extrinsic: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]  
